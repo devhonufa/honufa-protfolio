@@ -1,0 +1,57 @@
+/* about css coding*/
+.about-area{
+    .about-img{
+        img{
+
+        }
+    }
+    .about-content{
+        margin: 80px 50px 0 40px;
+        h2{
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 60px;
+            color: $heading_color
+        }
+        h4{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: $black;
+
+        }
+        p{
+            font-size: 16px;
+            color: $black;
+
+        }
+        ul{
+            li{
+                font-size: 15px;
+                margin-bottom: 10px;
+                i{
+                    color: $primary_color;
+                    margin-right: 5px;
+                }
+            }
+        }
+        a{
+
+        }
+        
+    }
+}
+
+
+
+
+
+
+// bottom css about
+.btn-border{
+            @include btn-border;
+            margin-top: 20px;
+            &:hover{
+                color: $black;
+            }
+
+        }

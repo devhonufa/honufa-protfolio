@@ -1,0 +1,50 @@
+.header-area{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    z-index: 999;
+}
+.logo{
+    display: inline-block;
+    border: 2px solid $border_color;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0 65px 0 65px;
+    cursor: pointer;
+    a{
+        color: $link_color;
+    }
+}
+
+.menu{
+    ul{
+        li{
+            margin: 0 10px;
+            position: relative;
+            &:hover::after{
+                    width: 100%;
+                }
+         // underline css code
+            &::after{
+                content: "";
+                height: 3px;
+                width: 0;
+                background: $link_hover;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s all;
+            }
+            a{
+              @include a;
+             
+            }
+             .activ{
+                  color: $link_hover;
+              }
+
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* background img css code*/
+.bg{
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+         opacity: .85;
+         z-index: -1;
+    }
+
+    .banner-content{
+        h1{
+         font-size: 50px;
+         font-weight: 700;
+         color: $white;
+         line-height: 60px;
+        }
+        h4{
+            font-size: 20px;
+            color: $white;
+            line-height: 60px;
+
+
+        }
+      .btn-primary{
+            @include btn-primary;
+
+        }
+    .btn-border{
+            @include btn-border;
+
+        }
+
+       
+    }
+}
