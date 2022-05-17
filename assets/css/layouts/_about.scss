@@ -81,3 +81,30 @@
         }
        }
 }
+@media screen and (max-width: 480px){
+       .about-area{
+             display: flex;
+             flex-direction: row;
+             justify-content: start;
+             padding: 0 0 40px 0;
+                .col-xxl-4{
+             width: 100%;
+        }
+                .col-xxl-8{
+              width: 100%;
+        }
+        .about-img{
+            margin-bottom: 30px;
+            padding: 0;
+            
+            img{
+                   width: 100%;
+
+            }
+        }
+        .about-content{
+             margin: 10px;
+             text-align: left;
+        }
+       }
+}

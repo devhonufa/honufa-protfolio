@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* background img css code*/
 .bg {
-  height: 130vh;
+  height: 120vh;
   position: relative;
   z-index: 2;
   -webkit-transition: 0.3s all;
@@ -773,22 +773,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg .banner-content h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: #ffff;
   line-height: 60px;
 }
 
-@media screen and (max-width: 768px) {
-  .bg .banner-content h1 {
-    font-size: 50px;
-  }
-}
-
 .bg .banner-content h4 {
   font-size: 20px;
   color: #ffff;
-  line-height: 60px;
+  line-height: 35px;
 }
 
 .bg .banner-content .btn-primary {
@@ -861,10 +855,30 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 992px) {
+  .banner-area {
+    height: 70vh;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .banner-area {
-    height: 80vh;
+    height: 90vh;
     padding: 0;
+  }
+  .banner-area .banner-content h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-area {
+    height: 75vh;
+    padding: 0;
+  }
+  .banner-area .banner-content h1 {
+    font-size: 40px;
   }
 }
 
@@ -995,6 +1009,39 @@ h1, h2, h3, h4, h5, h6 {
   .about-area .about-content {
     margin: 10px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0 0 40px 0;
+  }
+  .about-area .col-xxl-4 {
+    width: 100%;
+  }
+  .about-area .col-xxl-8 {
+    width: 100%;
+  }
+  .about-area .about-img {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .about-area .about-img img {
+    width: 100%;
+  }
+  .about-area .about-content {
+    margin: 10px;
+    text-align: left;
   }
 }
 
@@ -1612,7 +1659,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .team-area .single-team:hover .team-overly {
     bottom: 0;
-    padding: 80px 20px;
+    padding: 50px 20px;
   }
   .team-area .single-team:hover .team-overly i {
     margin: 10px 0 10px 3px;
@@ -1624,7 +1671,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
   .team-area .single-team .team-overly {
-    bottom: -250px;
+    bottom: -190px;
   }
 }
 
@@ -1751,8 +1798,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 480px) {
-  .blog-area .col-xxl-4 {
+  .blog-area {
+    padding: 60px 0;
+  }
+  .blog-area .row .col-xxl-4 {
     width: 100%;
+    margin: 20px 0;
   }
 }
 
