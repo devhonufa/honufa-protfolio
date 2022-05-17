@@ -1,23 +1,33 @@
 .container, .container-fluid{
     width: 100%;
-    padding: 0 30px;
+    // max-width: 980px;
+    padding: 0 20px;
     margin: 0 auto;
     .row{
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -15px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
     }
 }
 
-.single-services{
-  background: rosybrown;
-  padding: 10px;
-  margin: 10px 0;
-}
+// .single-services{
+//   background: rosybrown;
+//   padding: 10px;
+//   margin: 10px 0;
+// }
 
 $grid-columns: 12;
   @for $i from 1 to $grid-columns {
   .col-xxl-#{$i}{
+    width: (100 / 12) *$i * 1%;
+    padding: 0 15px;
+  }
+  
+}
+  @for $i from 1 to $grid-columns {
+  .col-#{$i}{
     width: (100 / 12) *$i * 1%;
     padding: 0 15px;
   }
@@ -29,6 +39,8 @@ $grid-columns: 12;
 
 $grid-xxl-breakpoint: 1400px;
 $grid-xl-breakpoint: 1200px;
+$grid-md-breakpoint: 768px;
+$grid-breakpoint: 290px;
 
 // @media (min-width: $grid-xxl-breakpoint) {
       
@@ -44,10 +56,10 @@ $grid-xl-breakpoint: 1200px;
 @media (min-width: $grid-xxl-breakpoint) {
       
   .container{
-    width: 1320px; 
+    width: 1320px;
   }
-    @for $i from 1 to $grid-columns{
-      .col-xl-#{$i} {
+ @for $i from 1 to $grid-columns{
+      .col-xxl-#{$i} {
         width: (100 / 12) * $i * 1%;
         padding: 0 15px;
 
@@ -56,15 +68,28 @@ $grid-xl-breakpoint: 1200px;
     }
   
 }
+@media (max-width: $grid-breakpoint) {
+      
+  .container{
+    width: 280px;
+  }
+ @for $i from 1 to $grid-columns{
+      .col-#{$i} {
+        width: (100 / 12) * $i * 1%;
+        padding: 0 15px;
+      }
+      
+    }
+  
+}
 
-// @media (max-width: $grid-xxl-breakpoint) {
+// @media (min-width: $grid-xl-breakpoint) {
       
 //   .container{
-//     width: 1140px;
-    
+//     width: 1140px;  
 //   }
 //   @for $i from 1 to $grid-columns {
-//     .col-xxl-#{$i} {
+//     .col-xl-#{$i} {
 //       width: (100 / 12) *$i * 1%;
 //      padding: 0 15px;
 
@@ -73,4 +98,3 @@ $grid-xl-breakpoint: 1200px;
 //   }
   
 // }
-

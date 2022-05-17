@@ -2,15 +2,12 @@
   .col-xxl-4{
     padding: 0;
   }
-    .project-title{
-        @include title;
-    }
     .single-project{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 300px;
-      margin: 2px;
+      margin: 10px;
       &:hover{
         .projet-content{
         opacity: 1;
@@ -53,7 +50,7 @@
         display: block;
         font-size: 12;
         font-weight: 300;
-        text-transform: lowercase
+        text-transform: lowercase;
 
       }
 
@@ -65,5 +62,21 @@
       }
       
 
+    }
+}
+// --------------------Tablets---------------------
+@media screen and (max-width: 769px){
+    .project-area{
+        .col-xxl-4{
+            width: 50%;
+        }
+    }
+}
+// --------------------Mobile devices---------------------
+@media screen and (max-width: 480px){
+    .project-area{
+        .col-xxl-4{
+            width: 100%;
+        }
     }
 }

@@ -1,13 +1,10 @@
 .service-area{
     background: $background_color;
-    .service-title{
-        @include title;
-    }
     .single-service{
-         background: $white;
+        background: $white;
         padding: 25px 30px;
         margin-bottom: 30px;
-        box-shadow: 0 0 13px $gray;
+        box-shadow: 0px 0px 11px 0px $gray;
         &:hover i{
                 border-radius: 0;
             }
@@ -31,6 +28,22 @@
         p{
             color: $black;
 
+        }
+        
+    }
+
+}
+@media screen and (max-width: 769px){
+    .service-area{
+        .col-xxl-4{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .service-area{
+        .col-xxl-4{
+            width: 100%;
         }
     }
 }
